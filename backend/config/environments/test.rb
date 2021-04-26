@@ -5,7 +5,16 @@ require "active_support/core_ext/integer/time"
 # your test database is "scratch space" for the test suite and is wiped
 # and recreated between test runs. Don't rely on the data there!
 
+your_api_key = '__CHANGE__ME__'
+
+options = {
+    :app => 'rails_app',
+    :level => "INFO",
+    :env => "PRODUCTION",
+    :meta => {:once => {:first => "nested1", :another => "nested2"}},
+}
 Rails.application.configure do
+  config.logger = Logdna::Ruby.new(your_api_key, options)
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.cache_classes = false

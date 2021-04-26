@@ -1,5 +1,6 @@
 class GreetingsController < ApplicationController
   def hello
-    render json: { content: 'Hello from Rails' }
+  	logger.log('This is warn message', {:meta => {:meta => "data"}, :level => "WARN", :app => "awesome", :env => "DEVELOPMENT"})
+    render json: { content: 'Hello from Rails!!one' }
   end
 end

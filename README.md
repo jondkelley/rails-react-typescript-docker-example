@@ -1,5 +1,8 @@
 # Rails-React-TypeScript-Docker Example ![backend_test](https://github.com/ohbarye/rails-react-typescript-docker-example/actions/workflows/backend_test.yml/badge.svg) ![frontend_test](https://github.com/ohbarye/rails-react-typescript-docker-example/actions/workflows/frontend_test.yml/badge.svg)
 
+## Sauce https://github.com/ohbarye/rails-react-typescript-docker-example
+## https://stackify.com/rails-logger-and-rails-logging-best-practices/
+
 ## TL;DR
 
 **Here is an example application with the following modern web technology stacks. With this boilerplate, you can easily start to build your own app.**

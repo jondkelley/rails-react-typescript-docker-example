@@ -1,6 +1,15 @@
 require "active_support/core_ext/integer/time"
 
+your_api_key = '__CHANGE__ME__'
+
+options = {
+    :app => 'rails_app',
+    :level => "INFO",
+    :env => "PRODUCTION",
+    :meta => {:once => {:first => "nested1", :another => "nested2"}},
+}
 Rails.application.configure do
+  config.logger = Logdna::Ruby.new(your_api_key, options)
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
